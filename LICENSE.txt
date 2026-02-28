@@ -1,0 +1,193 @@
+PROPRIETARY SOFTWARE LICENSE AGREEMENT - INSTARAW for ComfyUI
+
+Copyright © 2025 Instara. All Rights Reserved.
+
+This Proprietary Software License Agreement ("Agreement") is a legal contract between you, the Licensee, and Instara ("Licensor") for the software package known as INSTARAW, which includes custom nodes, workflows, scripts, and associated documentation ("Software").
+
+⚠️ CRITICAL: BY INSTALLING, COPYING, OR OTHERWISE USING THE SOFTWARE, YOU AGREE TO BE BOUND BY ALL TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THESE TERMS, DO NOT INSTALL OR USE THE SOFTWARE.
+
+================================================================================
+SECTION 1: GRANT OF LICENSE
+================================================================================
+
+The Licensor grants you a personal, non-exclusive, non-transferable, revocable license to use the Software for your own individual creative or commercial purposes, subject to all restrictions and obligations outlined in this Agreement.
+
+================================================================================
+SECTION 2: RESTRICTIONS ON USE
+================================================================================
+
+You are expressly prohibited from:
+    a. Redistributing, selling, sublicensing, leasing, renting, or otherwise making the Software available to any third party, in whole or in part. This includes, but is not limited to, sharing the software via public or private repositories (e.g., GitHub), file-sharing services, or direct transfer.
+    b. Using the Software as part of any commercial service, platform-as-a-service (PaaS), software-as-a-service (SaaS), or any public-facing application where end-users can interact with the Software's functionality without their own valid license.
+    c. Modifying, translating, reverse engineering, decompiling, or disassembling the Software, except to the extent that this restriction is expressly prohibited by applicable law.
+    d. Removing, altering, or obscuring any proprietary notices, labels, or digital watermarks embedded within the Software.
+
+================================================================================
+SECTION 3: PROHIBITED USES AND CONTENT RESTRICTIONS
+================================================================================
+
+You EXPRESSLY AGREE NOT TO USE the Software for any of the following purposes:
+
+a. ILLEGAL ACTIVITIES: Creating, distributing, or facilitating the creation of content that violates any applicable local, state, national, or international law or regulation.
+
+b. NON-CONSENSUAL CONTENT: Creating or distributing manipulated images, videos, or other content depicting real individuals without their explicit, informed, and documented consent. This includes but is not limited to:
+    - Non-consensual deepfakes or face swaps
+    - Non-consensual intimate imagery
+    - Content that violates an individual's right of privacy or publicity
+
+c. HARMFUL OR DECEPTIVE CONTENT: Creating content intended to:
+    - Deceive, defraud, or manipulate others
+    - Impersonate real individuals for malicious purposes
+    - Create false evidence or misleading information
+    - Harass, threaten, defame, or harm others
+    - Interfere with democratic processes (election manipulation, voter fraud, etc.)
+
+d. CHILD EXPLOITATION: Creating any content involving minors in any inappropriate, exploitative, or illegal manner whatsoever.
+
+e. INTELLECTUAL PROPERTY VIOLATIONS: Creating content that infringes on copyrights, trademarks, or other intellectual property rights of third parties without proper authorization.
+
+f. PLATFORM VIOLATIONS: Using the Software to create content that violates the terms of service of platforms where such content may be published (Instagram, Twitter, YouTube, etc.).
+
+================================================================================
+SECTION 4: USER RESPONSIBILITIES AND LEGAL COMPLIANCE
+================================================================================
+
+YOU ACKNOWLEDGE AND AGREE THAT:
+
+a. You are solely responsible for all content created using the Software and all consequences arising from such creation and distribution.
+
+b. You are responsible for obtaining all necessary rights, permissions, licenses, and consents from any individuals whose likeness, voice, or other identifying characteristics appear in content you create using the Software.
+
+c. You will comply with all applicable laws and regulations in your jurisdiction, including but not limited to:
+    - Privacy laws and data protection regulations (GDPR, CCPA, etc.)
+    - Right of publicity and personality rights
+    - Intellectual property laws
+    - Anti-fraud and consumer protection laws
+    - Platform terms of service and community guidelines
+
+d. You will clearly disclose that content created using the Software is AI-generated or manipulated when required by law or platform policies, or when such disclosure is necessary to prevent deception.
+
+e. You are 18 years of age or older and have the legal capacity to enter into this Agreement.
+
+f. You will maintain appropriate documentation of consents, licenses, and permissions obtained for your use of the Software.
+
+================================================================================
+SECTION 5: INDEMNIFICATION
+================================================================================
+
+YOU AGREE TO DEFEND, INDEMNIFY, AND HOLD HARMLESS the Licensor, its affiliates, officers, directors, employees, agents, and licensors from and against ANY AND ALL claims, damages, obligations, losses, liabilities, costs, debts, and expenses (including but not limited to attorney's fees) arising from:
+
+    a. Your use or misuse of the Software
+    b. Your violation of any term of this Agreement
+    c. Your violation of any third-party right, including without limitation any copyright, trademark, trade secret, or right of privacy or publicity
+    d. Any content you create, distribute, or facilitate using the Software
+    e. Any claim that content you created using the Software caused damage to a third party
+
+This indemnification obligation will survive the termination of this Agreement.
+
+================================================================================
+SECTION 6: LICENSE IDENTIFICATION AND MONITORING
+================================================================================
+
+You acknowledge that:
+    a. The Software provided to you contains a unique, license-specific identifier
+    b. This identifier is used to protect the Software from unauthorized distribution and to identify the source of leaked copies in the event of a license violation
+    c. The Licensor reserves the right to monitor and investigate unauthorized distribution
+    d. By using the Software, you consent to the inclusion of this identifier
+
+================================================================================
+SECTION 7: INTELLECTUAL PROPERTY
+================================================================================
+
+The Software is the intellectual property of and is owned by the Licensor. This Agreement does not grant you any ownership rights to the Software, but only a limited right of use as defined herein. All rights not expressly granted are reserved by the Licensor.
+
+================================================================================
+SECTION 8: TERMINATION
+================================================================================
+
+This license will terminate automatically and immediately without notice from the Licensor if you fail to comply with any term of this Agreement. Upon termination, you must:
+    a. Immediately cease all use of the Software
+    b. Destroy all copies of the Software in your possession or control
+    c. Certify in writing to the Licensor that you have complied with these requirements (if requested)
+
+The Licensor reserves the right to pursue all available legal remedies for any breach of this Agreement.
+
+================================================================================
+SECTION 9: DISCLAIMER OF WARRANTY
+================================================================================
+
+THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NONINFRINGEMENT, ACCURACY, RELIABILITY, OR SUITABILITY FOR ANY PARTICULAR USE.
+
+THE LICENSOR DOES NOT WARRANT THAT:
+    a. The Software will meet your requirements
+    b. The operation of the Software will be uninterrupted or error-free
+    c. Defects in the Software will be corrected
+    d. The Software is free from viruses or other harmful components
+    e. Results obtained from the Software will be accurate, reliable, or legal
+
+YOU ASSUME ALL RISK AND RESPONSIBILITY FOR THE USE OF THE SOFTWARE AND FOR ANY RESULTS OBTAINED THEREFROM.
+
+================================================================================
+SECTION 10: LIMITATION OF LIABILITY
+================================================================================
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW:
+
+IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES (INCLUDING BUT NOT LIMITED TO PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; BUSINESS INTERRUPTION; LEGAL FEES; REPUTATIONAL HARM; OR ANY OTHER DAMAGES) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+WITHOUT LIMITING THE FOREGOING, THE LICENSOR SHALL NOT BE LIABLE FOR:
+    a. Any content created by you using the Software
+    b. Any use or misuse of content created using the Software by you or third parties
+    c. Any claims by third parties arising from content you create using the Software
+    d. Any violation of law or third-party rights by you in connection with your use of the Software
+    e. Any consequences of your failure to obtain necessary consents, licenses, or permissions
+
+SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU.
+
+================================================================================
+SECTION 11: NO LEGAL, ETHICAL, OR COMPLIANCE ADVICE
+================================================================================
+
+The Licensor does not provide legal, ethical, or compliance advice. You are solely responsible for determining whether your use of the Software complies with applicable laws and regulations in your jurisdiction. You should consult with qualified legal counsel regarding your use of the Software and content you create with it.
+
+================================================================================
+SECTION 12: SEVERABILITY
+================================================================================
+
+If any provision of this Agreement is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary so that this Agreement shall otherwise remain in full force and effect and enforceable.
+
+================================================================================
+SECTION 13: GOVERNING LAW AND JURISDICTION
+================================================================================
+
+This Agreement shall be governed by and construed in accordance with the laws of England and Wales, without regard to its conflict of law provisions. Any legal action or proceeding arising under this Agreement shall be brought exclusively in the courts of England and Wales, and the parties hereby irrevocably consent to the personal jurisdiction and venue therein.
+
+================================================================================
+SECTION 14: ENTIRE AGREEMENT
+================================================================================
+
+This Agreement constitutes the entire agreement between you and the Licensor regarding the use of the Software and supersedes all prior or contemporaneous understandings, agreements, representations, and warranties, both written and oral, regarding the Software.
+
+================================================================================
+SECTION 15: ACKNOWLEDGMENT
+================================================================================
+
+BY USING THIS SOFTWARE, YOU AFFIRM THAT:
+    ✓ You have read and understood this entire Agreement
+    ✓ You agree to be bound by all its terms and conditions
+    ✓ You are 18 years of age or older
+    ✓ You have the legal capacity to enter into this Agreement
+    ✓ You understand the prohibited uses and will not engage in them
+    ✓ You understand your responsibilities regarding consent and legal compliance
+    ✓ You understand that you are solely responsible for your use of the Software
+    ✓ You understand the Licensor's limitations of liability
+    ✓ You agree to indemnify the Licensor as set forth above
+
+IF YOU DO NOT AGREE TO ALL OF THESE TERMS, DO NOT USE THE SOFTWARE.
+
+================================================================================
+End of License Agreement
+================================================================================
+
+For questions about this license, contact: legal@instara.io
+Last Updated: October 2025

@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html><head>
+<title>root_README</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="file:////home/dreamer/.vscode-server/extensions/shd101wyy.markdown-preview-enhanced-0.8.20/crossnote/dependencies/katex/katex.min.css" rel="stylesheet"/>
+<style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      
+
+        /* INSTARAW Dark Theme Override */
+        html body {
+            color: #e0e0e0 !important;
+            background-color: #101316 !important;
+        }
+
+        /* Headings */
+        html body h1, html body h2, html body h3,
+        html body h4, html body h5, html body h6 {
+            color: #ffffff !important;
+        }
+
+        /* Links */
+        html body a {
+            color: #4da6ff !important;
+        }
+        html body a:hover {
+            color: #80bfff !important;
+        }
+
+        /* Strong/Bold text */
+        html body strong {
+            color: #ffffff !important;
+        }
+
+        /* Code blocks */
+        html body code {
+            color: #f0f0f0 !important;
+            background-color: #1a1d21 !important;
+        }
+
+        html body pre {
+            background-color: #1a1d21 !important;
+            border: 1px solid #2a2d31 !important;
+        }
+
+        html body pre code {
+            background-color: transparent !important;
+        }
+
+        /* Syntax highlighting adjustments for dark mode */
+        code[class*=language-], pre[class*=language-] {
+            color: #e0e0e0 !important;
+            background: transparent !important;
+        }
+
+        pre[class*=language-] {
+            background: #1a1d21 !important;
+        }
+
+        :not(pre) > code[class*=language-] {
+            background: #1a1d21 !important;
+        }
+
+        /* Tables */
+        html body table {
+            border-color: #3a3d41 !important;
+        }
+
+        html body table th {
+            color: #ffffff !important;
+            background-color: #1a1d21 !important;
+        }
+
+        html body table td {
+            color: #e0e0e0 !important;
+            border: 1px solid #3a3d41 !important;
+        }
+
+        /* Blockquotes */
+        html body blockquote {
+            color: #c0c0c0 !important;
+            background-color: #1a1d21 !important;
+            border-left: 4px solid #4a4d51 !important;
+        }
+
+        /* Horizontal rules */
+        html body hr {
+            background-color: #3a3d41 !important;
+        }
+
+        /* Keyboard shortcuts */
+        html body kbd {
+            color: #f0f0f0 !important;
+            background-color: #2a2d31 !important;
+            border: 1px solid #4a4d51 !important;
+            border-bottom: 2px solid #5a5d61 !important;
+        }
+
+        /* Deleted text */
+        html body del {
+            color: #a0a0a0 !important;
+        }
+
+        /* Lists */
+        html body li {
+            color: #e0e0e0 !important;
+        }
+
+        /* Paragraphs */
+        html body p {
+            color: #e0e0e0 !important;
+        }
+
+        /* Ensure images remain visible */
+        html body img {
+            background-color: transparent !important;
+        }
+
+        /* Badge images - ensure they're visible */
+        img[src*="shields.io"], img[src*="badge"] {
+            filter: brightness(1.1) !important;
+        }
+
+        /* Details/Summary elements */
+        html body details {
+            background-color: #1a1d21 !important;
+            border: 1px solid #3a3d41 !important;
+        }
+
+        html body summary {
+            color: #ffffff !important;
+        }
+
+        /* Token syntax colors for dark mode */
+        .token.comment, .token.blockquote {
+            color: #7d8590 !important;
+        }
+
+        .token.keyword, .token.important, .token.operator {
+            color: #ff7b72 !important;
+        }
+
+        .token.string, .token.attr-value {
+            color: #a5d6ff !important;
+        }
+
+        .token.function, .token.class-name {
+            color: #d2a8ff !important;
+        }
+
+        .token.number, .token.boolean {
+            color: #79c0ff !important;
+        }
+
+        .token.selector, .token.tag {
+            color: #7ee787 !important;
+        }
+    </style>
+<!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+<div class="crossnote markdown-preview">
+<div align="center">
+<img alt="INSTARAW Logo" src="https://instara.s3.us-east-1.amazonaws.com/instaraw.svg" width="240"/>
+<br/>
+<br/>
+<br/>
+<p><img alt="Version" src="https://img.shields.io/badge/Version-2.0.0-gold.svg"/><br/>
+<img alt="Status" src="https://img.shields.io/badge/Status-VIP%20Access-blue.svg"/></p>
+<h1 id="welcome-to-instaraw-v20-">Welcome to INSTARAW V2.0! 🎉 </h1>
+<p><strong>Thank you for joining the INSTARAW VIP Program!</strong></p>
+<p>You're now equipped with a powerful suite of custom nodes and workflows designed to create next-level AI influencer content.</p>
+<p>Let's get you set up in minutes! ⚡</p>
+</div>
+<hr/>
+<h2 id="️-important-legal-notice">⚖️ IMPORTANT LEGAL NOTICE </h2>
+<p><strong>By using this software, you agree to the terms in LICENSE.txt.</strong></p>
+<p><strong>YOU ARE RESPONSIBLE FOR:</strong></p>
+<ul>
+<li>✅ Obtaining consent from anyone whose likeness you use</li>
+<li>✅ Complying with all applicable laws in your jurisdiction</li>
+<li>✅ Ensuring your content doesn't violate platform terms of service</li>
+<li>✅ Using this software ethically and legally</li>
+</ul>
+<p><strong>PROHIBITED USES:</strong></p>
+<ul>
+<li>❌ Non-consensual deepfakes or manipulated content</li>
+<li>❌ Illegal content or activities</li>
+<li>❌ Content involving minors</li>
+<li>❌ Deceptive, fraudulent, or harmful content</li>
+<li>❌ Violations of others' rights (privacy, publicity, copyright, etc.)</li>
+</ul>
+<p><strong>Read the full LICENSE.txt file before using this software. You indemnify the licensor for any misuse.</strong></p>
+<hr/>
+<h2 id="-video-walkthroughs">🎬 Video Walkthroughs </h2>
+<p>Learn how to use INSTARAW workflows with our YouTube tutorials:</p>
+<table>
+<thead>
+<tr>
+<th>Workflow</th>
+<th>Video Tutorial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>WAN 2.2 V2.0</strong></td>
+<td><a href="https://youtu.be/gDWbd_Kc8wM">Watch Tutorial →</a></td>
+</tr>
+<tr>
+<td><strong>SDXL + WAN Combo V2.0</strong></td>
+<td><a href="https://youtu.be/VYKFHH5xMWg">Watch Tutorial →</a></td>
+</tr>
+<tr>
+<td><strong>Detailing V2.0</strong></td>
+<td><a href="https://youtu.be/hFhhgu41fh0">Watch Tutorial →</a></td>
+</tr>
+<tr>
+<td><strong>SDXL Inpainting V2.0</strong></td>
+<td><a href="https://youtu.be/foriaSmbJ_I">Watch Tutorial →</a></td>
+</tr>
+<tr>
+<td><strong>Caption Generator V2.0</strong></td>
+<td><a href="https://youtu.be/CIq3EehXWmc">Watch Tutorial →</a></td>
+</tr>
+</tbody>
+</table>
+<p><em>More tutorials coming soon!</em></p>
+<hr/>
+<h2 id="-version-history">📋 Version History </h2>
+<details>
+<summary><b>Click to view changelog</b></summary>
+<br/>
+<h3 id="v200-current">V2.0.0 (Current) </h3>
+<p><strong>Release Date:</strong> December 2025</p>
+<p><strong>Major New Features:</strong></p>
+<ul>
+<li>✨ <strong>AIL Node</strong> - Advanced Image Loader with interactive batch management</li>
+<li>✨ <strong>RPG Node</strong> - Reality Prompt Generator with AI integration (Gemini/Grok) and ~8K prompts</li>
+<li>✨ <strong>BIG Node</strong> - Batch Image Generator with parallel processing and 2X mode</li>
+<li>✨ <strong>Detection Bypass System</strong> - Spectral Engine, Texture Engine, Pixel Perturb</li>
+<li>✨ <strong>Authenticity Layer</strong> - Camera simulation, EXIF embedding, neural grain</li>
+<li>✨ <strong>WAN 2.2 Multi-Sampler</strong> - 4-sampler T2I/I2I for hyper-realistic skin and lighting</li>
+<li>✨ <strong>Faceswap V2.0</strong> - Close-to-face cropping for NSFW + Nano Banana Pro expression control</li>
+<li>✨ <strong>Finalpass V2.0</strong> - Tiling SeedVR2 for great upscaling results</li>
+</ul>
+<p><strong>14 Production Workflows (All V2.0):</strong></p>
+<ul>
+<li>BIG V2.0</li>
+<li>Booba &amp; Glutes V2.0</li>
+<li>Bypass AI Detection MAX V2.0</li>
+<li>Bypass AI Detection MIN V2.0</li>
+<li>Caption Generator V2.0</li>
+<li>Detailing V2.0</li>
+<li>Faceswap V2.0</li>
+<li>Finalpass V2.0</li>
+<li>SDXL Inpainting V2.0</li>
+<li>SDXL + WAN Combo NSFW V2.0</li>
+<li>SDXL + zImage Combo NSFW V2.0</li>
+<li>Teleport V2.0</li>
+<li>WAN 2.2 V2.0</li>
+<li>zImage V2.0</li>
+</ul>
+<p><strong>Migration Notes:</strong></p>
+<ul>
+<li>Full replacement required from V1.x</li>
+<li>Must reinstall dependencies: <code>pip install -r requirements.txt</code></li>
+<li>Use new V2.0 workflow files</li>
+</ul>
+<hr/>
+<h3 id="v102">V1.0.2 </h3>
+<p><strong>Release Date:</strong> October 2025</p>
+<p><strong>Changes:</strong></p>
+<ul>
+<li>🐛 <strong>Fixed:</strong> Booba &amp; Glutes workflow errors</li>
+<li>🔄 <strong>Updated:</strong> Booba &amp; Glutes workflow → V8</li>
+</ul>
+<hr/>
+<h3 id="v101">V1.0.1 </h3>
+<p><strong>Release Date:</strong> October 2025</p>
+<p><strong>Changes:</strong></p>
+<ul>
+<li>🐛 <strong>Fixed:</strong> Gemini node dependency issues on some installations</li>
+<li>🔄 <strong>Updated:</strong> Faceswap workflow → V12</li>
+<li>🔄 <strong>Updated:</strong> Teleport workflow → V12</li>
+<li>📄 <strong>Added:</strong> Comprehensive legal protections and usage guidelines</li>
+</ul>
+<hr/>
+<h3 id="v10">V1.0 </h3>
+<p><strong>Release Date:</strong> October 2025</p>
+<p><strong>Initial Release:</strong></p>
+<ul>
+<li>✨ Complete custom nodes package for ComfyUI</li>
+<li>🎨 4 production workflows: Faceswap, Teleport, Booba &amp; Glutes, Finalpass</li>
+<li>🔌 API integrations: Ideogram, <a href="http://fal.ai">fal.ai</a>, <a href="http://wavespeed.ai">wavespeed.ai</a>, Google Gemini</li>
+<li>🖼️ Interactive image filtering and selection nodes</li>
+<li>🎭 Advanced masking with MediaPipe</li>
+<li>🔧 Utility nodes for resolution control, image comparison, and more</li>
+<li>📚 Complete documentation and setup guides</li>
+</ul>
+</details>
+<hr/>
+<h2 id="-update-for-existing-users-v1x--v20">🔄 Update for Existing Users (V1.x → V2.0) </h2>
+<details>
+<summary><b>📋 Click here if you're updating from V1.x</b></summary>
+<br/>
+<h3 id="whats-new-in-v20">What's New in V2.0 </h3>
+<p>V2.0 is a major release with significant new features:</p>
+<ul>
+<li>Three flagship interactive nodes (AIL, RPG, BIG)</li>
+<li>Detection bypass and authenticity system</li>
+<li>14 new V2.0 workflows</li>
+<li>45+ new utility nodes</li>
+<li>WAN 2.2 multi-sampler for hyper-realistic results</li>
+<li>zImage Turbo for fast local generation</li>
+</ul>
+<h3 id="how-to-update">How to Update </h3>
+<p><strong>Full replacement required:</strong></p>
+<ol>
+<li><strong>Backup your API keys</strong> - Note them down from your current workflows</li>
+<li><strong>Remove old nodes</strong> - Delete <code>ComfyUI_INSTARAW</code> from <code>custom_nodes/</code></li>
+<li><strong>Install new nodes</strong> - Copy the new <code>ComfyUI_INSTARAW</code> folder</li>
+<li><strong>Reinstall dependencies</strong>:<pre class="language-bash bash" data-info="bash" data-role="codeBlock"><code><span class="token builtin class-name">cd</span> ComfyUI/custom_nodes/ComfyUI_INSTARAW
+pip <span class="token function">install</span> <span class="token parameter variable">-r</span> requirements.txt
+</code></pre></li>
+<li><strong>Download new models</strong> - Run the model downloader script (see Step 2 below)</li>
+<li><strong>Restart ComfyUI</strong> completely</li>
+<li><strong>Use V2.0 workflows</strong> - Old V1 workflows are not compatible</li>
+</ol>
+</details>
+<hr/>
+<h2 id="-whats-in-this-package">📦 What's in This Package? </h2>
+<p>This archive contains everything you need to start creating professional AI content:</p>
+<table>
+<tbody><tr>
+<td width="50%">
+<h3 id="-comfyui_instaraw">🔧 ComfyUI_INSTARAW/ </h3>
+<p>The core custom nodes package:</p>
+<ul>
+<li><strong>AIL</strong> - Advanced Image Loader</li>
+<li><strong>RPG</strong> - Reality Prompt Generator (~8K prompts)</li>
+<li><strong>BIG</strong> - Batch Image Generator (2X mode)</li>
+<li>80+ utility nodes</li>
+<li>Detection bypass system</li>
+<li>API integrations</li>
+</ul>
+</td>
+<td width="50%">
+<h3 id="-workflows-14-total">🎨 Workflows/ (14 Total) </h3>
+<p>Premium V2.0 workflow templates:</p>
+<ul>
+<li><strong>Faceswap V2.0</strong> - Expression control</li>
+<li><strong>WAN 2.2 V2.0</strong> - Multi-sampler T2I/I2I</li>
+<li><strong>zImage V2.0</strong> - Fast local generation</li>
+<li><strong>Bypass AI Detection V2.0</strong> - MAX/MIN</li>
+<li><strong>Finalpass V2.0</strong> - SeedVR2 tiling</li>
+<li>And more...</li>
+</ul>
+</td>
+</tr>
+</tbody></table>
+<hr/>
+<h2 id="-quick-start-installation">🚀 Quick Start Installation </h2>
+<p>Follow these steps to get up and running:</p>
+<h3 id="step-1️⃣--extract--place-files">Step 1️⃣ : Extract &amp; Place Files </h3>
+<ol>
+<li>
+<p><strong>Unzip this archive</strong> to any location</p>
+</li>
+<li>
+<p><strong>Place the folders</strong> according to this structure:</p>
+<pre class="language-text" data-info="" data-role="codeBlock"><code>📁 Your ComfyUI Parent Folder/
+├── 📁 ComfyUI/
+│   └── 📁 custom_nodes/
+│       └── 📁 ComfyUI_INSTARAW/  ← Copy here
+├── 📁 downloader_scripts/        ← Place NEXT TO ComfyUI folder
+│   ├── 📁 linux/
+│   └── 📁 windows/
+└── 📁 Workflows/                 ← Place anywhere you like
+</code></pre><blockquote>
+<p>⚠️ <strong>Important</strong>: The <code>downloader_scripts/</code> folder must be placed <strong>next to</strong> (at the same level as) your <code>ComfyUI/</code> folder, NOT inside it. The scripts look for <code>ComfyUI/custom_nodes/</code> relative to where they run.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Install Python dependencies</strong>:</p>
+<p>Open a terminal/command prompt and navigate to your ComfyUI_INSTARAW folder:</p>
+<pre class="language-bash bash" data-info="bash" data-role="codeBlock"><code><span class="token comment"># Replace with your actual path</span>
+<span class="token builtin class-name">cd</span> /path/to/ComfyUI/custom_nodes/ComfyUI_INSTARAW
+pip <span class="token function">install</span> <span class="token parameter variable">-r</span> requirements.txt
+</code></pre><blockquote>
+<p>💡 <strong>Tip</strong>: Make sure you're using the same Python environment as ComfyUI</p>
+</blockquote>
+<blockquote>
+<p>⚠️ <strong>Python Version</strong>: INSTARAW works best with <strong>Python 3.11</strong>. Some Python 3.12 installations may work, but if you encounter MediaPipe installation errors on <strong>Windows Portable</strong>, see the <a href="#-advanced-python-311-setup-for-comfyui-portable">Python 3.11 Setup Guide</a> below.</p>
+</blockquote>
+</li>
+</ol>
+<hr/>
+<h3 id="step-2️⃣--download-required-models">Step 2️⃣ : Download Required Models </h3>
+<p>Use the automated model downloader script. <strong>You must run this from the correct location.</strong></p>
+<p><strong>Linux / macOS / <a href="http://Vast.ai">Vast.ai</a>:</strong></p>
+<pre class="language-bash bash" data-info="bash" data-role="codeBlock"><code><span class="token comment"># Navigate to the downloader_scripts folder (next to ComfyUI folder)</span>
+<span class="token builtin class-name">cd</span> /path/to/downloader_scripts/linux
+
+<span class="token comment"># On Vast.ai, this is most likely:</span>
+<span class="token comment"># cd /workspace/downloader_scripts/linux</span>
+
+<span class="token comment"># Make executable and run</span>
+<span class="token function">chmod</span> +x INSTARAW_Download_Models.sh
+./INSTARAW_Download_Models.sh
+</code></pre><p><strong>Windows:</strong></p>
+<pre class="language-cmd cmd" data-info="cmd" data-role="codeBlock"><code>REM Navigate to the downloader_scripts folder (next to ComfyUI folder)
+cd C:\path\to\downloader_scripts\windows
+
+REM Run the script
+INSTARAW_Download_Models.bat
+</code></pre><blockquote>
+<p>⚠️ <strong>Important</strong>: Run the script from INSIDE the <code>downloader_scripts/linux/</code> or <code>downloader_scripts/windows/</code> folder. The script expects to find <code>ComfyUI/custom_nodes/</code> one level up from where it runs.</p>
+</blockquote>
+<p>The script will:</p>
+<ol>
+<li>Install required Python libraries (requests, tqdm)</li>
+<li>Install exiftool (for metadata embedding)</li>
+<li>Clone and set up comfyui_controlnet_aux</li>
+<li>Install ComfyUI_INSTARAW dependencies</li>
+<li>Download all required models from <code>INSTARAW_models_to_download.txt</code></li>
+<li>Extract any .zip files automatically</li>
+<li>Restart ComfyUI (if supervisorctl available)</li>
+</ol>
+<blockquote>
+<p>💡 <strong>Tip</strong>: You can customize <code>INSTARAW_models_to_download.txt</code> - comment out lines with <code>#</code> to skip specific models.</p>
+</blockquote>
+<hr/>
+<h3 id="step-3️⃣--place-workflows">Step 3️⃣ : Place Workflows </h3>
+<p><strong>You can place the <code>Workflows</code> folder anywhere you like:</strong></p>
+<ul>
+<li>Desktop (easy access)</li>
+<li>Inside your main ComfyUI folder</li>
+<li>A dedicated projects folder</li>
+</ul>
+<blockquote>
+<p>📝 <strong>Important</strong>: The <code>fonts</code> folder inside <code>ComfyUI_INSTARAW</code> must stay where it is for preview nodes to work!</p>
+</blockquote>
+<hr/>
+<h3 id="step-4️⃣--restart-comfyui">Step 4️⃣ : Restart ComfyUI </h3>
+<p><strong>Completely shut down and restart ComfyUI</strong> to load the new nodes.</p>
+<p>You should now see nodes with the <code>INSTARAW</code> prefix in your node menu! 🎊</p>
+<hr/>
+<h3 id="step-5️⃣--set-up-api-keys">Step 5️⃣ : Set Up API Keys </h3>
+<table>
+<tbody><tr>
+<td width="30%">
+<h4 id="1-load-workflow">1. Load Workflow </h4>
+<p>Drag a <code>.json</code> file from the Workflows folder onto ComfyUI</p>
+</td>
+<td width="30%">
+<h4 id="2-find-api-key-nodes">2. Find API Key nodes </h4>
+<p>Look for the green <strong>"API Keys"</strong> nodes in the workflow</p>
+</td>
+<td width="30%">
+<h4 id="3-add-keys">3. Add Keys </h4>
+<p>Paste your API keys into the corresponding nodes</p>
+</td>
+</tr>
+</tbody></table>
+<hr/>
+<h2 id="-getting-api-keys">🔑 Getting API Keys </h2>
+<p>You'll need keys from these providers to use the workflows:</p>
+<h3 id="required-services">Required Services </h3>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>What It's For</th>
+<th>Where to Get It</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="http://fal.ai">fal.ai</a></strong> 🎨</td>
+<td>Nano Banana Pro (Full mode), SeeDream, faceswaps</td>
+<td><a href="https://fal.ai/dashboard/keys">Get Key →</a></td>
+</tr>
+<tr>
+<td><strong><a href="http://wavespeed.ai">wavespeed.ai</a></strong> ⚡</td>
+<td>Nano Banana Pro (2X mode), image generation</td>
+<td><a href="https://wavespeed.ai/accesskey">Get Key →</a></td>
+</tr>
+<tr>
+<td><strong>Google AI Studio</strong> 🧠</td>
+<td>Gemini vision &amp; prompts</td>
+<td><a href="https://aistudio.google.com/app/apikey">Get Key →</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="optional-services">Optional Services </h3>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>What It's For</th>
+<th>Where to Get It</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="http://ideogram.ai">ideogram.ai</a></strong> ✍️</td>
+<td>Direct Ideogram access</td>
+<td><a href="https://ideogram.ai/api/api-keys/">Get Key →</a></td>
+</tr>
+<tr>
+<td><strong>xAI</strong> 🤖</td>
+<td>Grok API for RPG node</td>
+<td><a href="https://console.x.ai/team/default/api-keys">Get Key →</a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Pro Tip</strong>: Get both <a href="http://fal.ai">fal.ai</a> and <a href="http://wavespeed.ai">wavespeed.ai</a> for full Nano Banana Pro support (Full + 2X modes).</p>
+</blockquote>
+<hr/>
+<h2 id="-understanding-costs">💰 Understanding Costs </h2>
+<p>The workflows use a mix of premium APIs and local models:</p>
+<h3 id="approximate-costs">Approximate Costs </h3>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>Provider</th>
+<th>Cost per Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nano Banana Pro (Full)</td>
+<td><a href="http://fal.ai">fal.ai</a></td>
+<td>~$0.14</td>
+</tr>
+<tr>
+<td>Nano Banana Pro (2X Mode)</td>
+<td><a href="http://wavespeed.ai">wavespeed.ai</a></td>
+<td>~$0.07 x 2</td>
+</tr>
+<tr>
+<td>Image Edit / Generation</td>
+<td><a href="http://fal.ai">fal.ai</a> / <a href="http://wavespeed.ai">wavespeed.ai</a></td>
+<td>~$0.03</td>
+</tr>
+<tr>
+<td>Face Swap</td>
+<td><a href="http://fal.ai">fal.ai</a> / Ideogram</td>
+<td>~$0.10</td>
+</tr>
+<tr>
+<td><strong>SDXL</strong></td>
+<td><strong>Local</strong></td>
+<td><strong>Free</strong> ⭐</td>
+</tr>
+<tr>
+<td><strong>WAN 2.2</strong></td>
+<td><strong>Local</strong></td>
+<td><strong>Free</strong> ⭐</td>
+</tr>
+<tr>
+<td><strong>zImage</strong></td>
+<td><strong>Local</strong></td>
+<td><strong>Free</strong> ⭐</td>
+</tr>
+<tr>
+<td>Gemini Vision/Prompts</td>
+<td>Google</td>
+<td><strong>Free tier</strong> ⭐</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cost-saving-tips">Cost-Saving Tips </h3>
+<ul>
+<li>✅ Use <strong>SDXL</strong>, <strong>WAN 2.2</strong>, and <strong>zImage</strong> workflows - they run locally for free!</li>
+<li>✅ Use <strong>Google's free tier</strong> for prompts and vision</li>
+<li>✅ Use <strong>2X mode</strong> in BIG for Nano Banana Pro (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.07</mn><mi>x</mi><mn>2</mn><mi>i</mi><mi>n</mi><mi>s</mi><mi>t</mi><mi>e</mi><mi>a</mi><mi>d</mi><mi>o</mi><mi>f</mi></mrow><annotation encoding="application/x-tex">0.07 x 2 instead of</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">0.07</span><span class="mord mathnormal">x</span><span class="mord">2</span><span class="mord mathnormal">in</span><span class="mord mathnormal">s</span><span class="mord mathnormal">t</span><span class="mord mathnormal">e</span><span class="mord mathnormal">a</span><span class="mord mathnormal">d</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span>0.14)</li>
+<li>✅ Test workflows with lower-cost operations first</li>
+</ul>
+<hr/>
+<h2 id="-the-three-flagship-nodes">✨ The Three Flagship Nodes </h2>
+<h3 id="️-ail---advanced-image-loader">🖼️ AIL - Advanced Image Loader </h3>
+<p>Interactive batch image management:</p>
+<ul>
+<li><strong>Drag-and-drop</strong> multi-file upload</li>
+<li><strong>Thumbnail previews</strong> with reordering</li>
+<li><strong>Per-image repeat control</strong></li>
+<li><strong>Batch tensor</strong> or <strong>sequential</strong> mode</li>
+<li><strong>txt2img support</strong> for text-only workflows</li>
+</ul>
+<h3 id="-rpg---reality-prompt-generator">💭 RPG - Reality Prompt Generator </h3>
+<p>AI-powered prompt generation:</p>
+<ul>
+<li><strong>Native Gemini/Grok</strong> API integration</li>
+<li><strong>~8K prompts database</strong></li>
+<li><strong>15+ expression presets</strong> (Smiling, Sexy, Confident, etc.)</li>
+<li><strong>4 image reference slots</strong></li>
+<li><strong>INSTARAW Grille Mode</strong> for hyper-realistic generation</li>
+</ul>
+<h3 id="-big---batch-image-generator">🎨 BIG - Batch Image Generator </h3>
+<p>Parallel generation engine:</p>
+<ul>
+<li><strong>Unlimited concurrent workers</strong></li>
+<li><strong>Real-time progress UI</strong></li>
+<li><strong>Job state visualization</strong> (Pending/Generating/Success/Failed)</li>
+<li><strong>PhotoSwipe gallery</strong> integration</li>
+<li><strong>Multi-select export</strong></li>
+<li><strong>2X mode</strong> for cost-effective Nano Banana Pro ($0.07 x 2)</li>
+</ul>
+<hr/>
+<h2 id="-your-first-workflow">🎓 Your First Workflow </h2>
+<p>Let's run your first INSTARAW workflow:</p>
+<h3 id="quick-test-run">Quick Test Run </h3>
+<ol>
+<li><strong>Open ComfyUI</strong> and drag <code>INSTARAW BIG V2.0.json</code> onto the canvas</li>
+<li><strong>Add your API keys</strong> to the green API group (<a href="http://fal.ai">fal.ai</a> for Nano Banana Pro)</li>
+<li><strong>Configure your prompts</strong> in the RPG node or add images to AIL</li>
+<li><strong>Click "Queue Prompt"</strong> and watch the magic happen! ✨</li>
+</ol>
+<blockquote>
+<p>💡 <strong>Why BIG?</strong> The BIG workflow uses Nano Banana Pro API - it works on any hardware since generation happens in the cloud. Local workflows like WAN 2.2 require a powerful GPU (RTX 5090 recommended for WAN, RTX 4090+ for zImage/SDXL).</p>
+</blockquote>
+<h3 id="what-to-expect">What to Expect </h3>
+<ul>
+<li>Workflows will pause at <strong>Interactive Filter</strong> nodes for your input</li>
+<li>Check the <strong>console</strong> for progress updates</li>
+<li>Results appear as they're generated</li>
+<li>BIG shows real-time progress with job states</li>
+</ul>
+<hr/>
+<h2 id="️-v20-workflow-guide-14-workflows">🗂️ V2.0 Workflow Guide (14 Workflows) </h2>
+<h3 id="-instaraw-big-v20">🎨 INSTARAW BIG V2.0 </h3>
+<p><strong>Perfect for</strong>: Standalone batch generation with Nano Banana Pro</p>
+<p><strong>Key Features</strong>:</p>
+<ul>
+<li>Parallel processing (1-16 workers)</li>
+<li>2X mode for cost savings</li>
+<li>Real-time progress UI</li>
+</ul>
+<hr/>
+<h3 id="-instaraw-faceswap-v20">🎭 INSTARAW Faceswap V2.0 </h3>
+<p><strong>Perfect for</strong>: Character consistency, face replacement</p>
+<p><strong>Key Features</strong>:</p>
+<ul>
+<li>Close-to-face cropping for better NSFW support</li>
+<li>Expression control via Nano Banana Pro</li>
+<li>High-quality preservation</li>
+</ul>
+<hr/>
+<h3 id="️-instaraw-wan-22-v20">🖼️ INSTARAW WAN 2.2 V2.0 </h3>
+<p><strong>Perfect for</strong>: Hyper-realistic skin and lighting</p>
+<p><strong>Key Features</strong>:</p>
+<ul>
+<li>4-sampler multi-pass T2I/I2I pipeline</li>
+<li>Local model (FREE!)</li>
+<li>Professional skin detail and lighting</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>GPU</strong>: RTX 5090 recommended (heavy model)</p>
+</blockquote>
+<hr/>
+<h3 id="-instaraw-zimage-v20">⚡ INSTARAW zImage V2.0 </h3>
+<p><strong>Perfect for</strong>: Fast iteration and prototyping</p>
+<p><strong>Key Features</strong>:</p>
+<ul>
+<li>zImage Turbo local model (FREE!)</li>
+<li>Quick turnaround</li>
+<li>Batch processing support</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>GPU</strong>: RTX 4090+ recommended</p>
+</blockquote>
+<hr/>
+<h3 id="️-instaraw-bypass-ai-detection-v20-maxmin">🛡️ INSTARAW Bypass AI Detection V2.0 (MAX/MIN) </h3>
+<p><strong>Perfect for</strong>: Making AI images undetectable</p>
+<p><strong>Key Features</strong>:</p>
+<ul>
+<li><strong>MAX</strong>: Full spectral/texture/pixel bypass</li>
+<li><strong>MIN</strong>: Lightweight, fast processing</li>
+<li>EXIF metadata embedding</li>
+</ul>
+<hr/>
+<h3 id="-instaraw-finalpass-v20">✨ INSTARAW Finalpass V2.0 </h3>
+<p><strong>Perfect for</strong>: Final polishing and quality improvements</p>
+<p><strong>Key Features</strong>:</p>
+<ul>
+<li>Tiling SeedVR2 upscaling</li>
+<li>Detail preservation</li>
+<li>Output optimization</li>
+</ul>
+<hr/>
+<h3 id="-instaraw-booba--glutes-v20">💪 INSTARAW Booba &amp; Glutes V2.0 </h3>
+<p><strong>Perfect for</strong>: Breast and butt enlargement</p>
+<p><strong>Key Features</strong>:</p>
+<ul>
+<li>Mask-based body modifications</li>
+<li>Natural-looking results</li>
+<li>Customizable intensity</li>
+</ul>
+<hr/>
+<h3 id="-instaraw-teleport-v20">🚁 INSTARAW Teleport V2.0 </h3>
+<p><strong>Perfect for</strong>: Background changes, setting variations</p>
+<p><strong>Key Features</strong>:</p>
+<ul>
+<li>Intelligent background replacement</li>
+<li>Style consistency</li>
+<li>Multiple generation options</li>
+</ul>
+<hr/>
+<h3 id="-instaraw-sdxl--wan-combo-nsfw-v20">🎨 INSTARAW SDXL + WAN Combo NSFW V2.0 </h3>
+<p><strong>Perfect for</strong>: SDXL generation with WAN face detailing</p>
+<p><strong>Key Features</strong>:</p>
+<ul>
+<li>WAN for face/character consistency</li>
+<li>SDXL for base generation</li>
+<li>Batch processing</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>GPU</strong>: RTX 5090 recommended (uses WAN)</p>
+</blockquote>
+<hr/>
+<h3 id="-instaraw-sdxl--zimage-combo-nsfw-v20">⚡ INSTARAW SDXL + zImage Combo NSFW V2.0 </h3>
+<p><strong>Perfect for</strong>: SDXL generation with zImage face detailing</p>
+<p><strong>Key Features</strong>:</p>
+<ul>
+<li>zImage for face/character consistency (FREE!)</li>
+<li>SDXL for base generation</li>
+<li>Quick turnaround</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>GPU</strong>: RTX 4090+ recommended</p>
+</blockquote>
+<hr/>
+<h3 id="-instaraw-detailing-v20">🔍 INSTARAW Detailing V2.0 </h3>
+<p><strong>Perfect for</strong>: Face/hand/body enhancement</p>
+<p><strong>Key Features</strong>:</p>
+<ul>
+<li>YOLO-based detection</li>
+<li>Targeted inpainting</li>
+<li>Natural blending</li>
+</ul>
+<hr/>
+<h3 id="️-instaraw-sdxl-inpainting-v20">🖌️ INSTARAW SDXL Inpainting V2.0 </h3>
+<p><strong>Perfect for</strong>: Intimate area inpainting (NSFW regions)</p>
+<p><strong>Key Features</strong>:</p>
+<ul>
+<li>Advanced mask tools</li>
+<li>SDXL quality</li>
+<li>Targeted region editing</li>
+</ul>
+<hr/>
+<h3 id="-instaraw-caption-generator-v20">📝 INSTARAW Caption Generator V2.0 </h3>
+<p><strong>Perfect for</strong>: AI-powered image captioning</p>
+<p><strong>Key Features</strong>:</p>
+<ul>
+<li>Gemini/Grok integration</li>
+<li>Detailed descriptions</li>
+<li>Batch processing</li>
+</ul>
+<hr/>
+<h2 id="-advanced-python-311-setup-for-comfyui-portable">🔧 Advanced: Python 3.11 Setup for ComfyUI Portable </h2>
+<details>
+<summary><b>⚠️ Click here if you have Python 3.12+ or dependency installation issues</b></summary>
+<br/>
+<h3 id="why-python-311">Why Python 3.11? </h3>
+<p>INSTARAW uses <strong>MediaPipe</strong> for advanced masking features. While some Python 3.12 installations work, <strong>Python 3.11 is the recommended version</strong> for maximum compatibility, especially on <strong>Windows Portable</strong>. If you're encountering MediaPipe installation errors, this guide will help you set up Python 3.11.</p>
+<blockquote>
+<p>💡 <strong>This works for both new and existing ComfyUI installations</strong></p>
+</blockquote>
+<hr/>
+<h3 id="part-1-preparation">Part 1: Preparation </h3>
+<h4 id="for-existing-comfyui-users-important">For Existing ComfyUI Users (Important): </h4>
+<p>If you have an existing ComfyUI Portable setup with models and workflows:</p>
+<ol>
+<li>Navigate to your <code>ComfyUI_windows_portable</code> directory</li>
+<li>Find the <code>ComfyUI</code> sub-folder (contains <code>models</code>, <code>input</code>, <code>output</code>)</li>
+<li><strong>Rename <code>ComfyUI</code> to <code>ComfyUI_OLD</code></strong> - This preserves all your models and data</li>
+</ol>
+<h4 id="for-all-users">For All Users: </h4>
+<ol>
+<li>
+<p><strong>Download Fresh ComfyUI Portable</strong>:</p>
+<ul>
+<li>Get the latest from <a href="https://github.com/comfyanonymous/ComfyUI/releases">ComfyUI Releases</a></li>
+<li>Extract the ZIP file</li>
+</ul>
+</li>
+<li>
+<p><strong>Download Python 3.11.9 Embeddable</strong>:</p>
+<ul>
+<li>Visit: <a href="https://www.python.org/downloads/release/python-3119/">https://www.python.org/downloads/release/python-3119/</a></li>
+<li>Download <strong>"Windows embeddable package (64-bit)"</strong> (<code>python-3.11.9-embed-amd64.zip</code>)</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h3 id="part-2-python-311-installation">Part 2: Python 3.11 Installation </h3>
+<p>Replace the default Python in your ComfyUI:</p>
+<ol>
+<li>
+<p><strong>Remove Old Python</strong>:</p>
+<ul>
+<li>Navigate to <code>ComfyUI_windows_portable\</code></li>
+<li><strong>Delete</strong> the <code>python_embeded</code> folder</li>
+</ul>
+</li>
+<li>
+<p><strong>Install Python 3.11</strong>:</p>
+<ul>
+<li>Extract <code>python-3.11.9-embed-amd64.zip</code></li>
+<li>Rename the extracted folder to <strong><code>python_embeded</code></strong></li>
+<li>Move it into <code>ComfyUI_windows_portable\</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Enable Python Features</strong>:</p>
+<ul>
+<li>Open <code>python_embeded\python311._pth</code> in a text editor</li>
+<li><strong>Remove <code>#</code></strong> from <code>#import site</code></li>
+<li><strong>Add these two lines</strong> at the top:<pre class="language-text" data-info="" data-role="codeBlock"><code>..\ComfyUI
+..\ComfyUI\src
+</code></pre></li>
+<li>The final file should look like this:<pre class="language-text" data-info="" data-role="codeBlock"><code>python311.zip
+.
+..\ComfyUI
+..\ComfyUI\src
+import site
+</code></pre></li>
+<li>Save and close</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h3 id="part-3-restore-your-data--install-instaraw">Part 3: Restore Your Data &amp; Install INSTARAW </h3>
+<ol>
+<li>
+<p><strong>(Existing Users Only) Restore Models</strong>:</p>
+<ul>
+<li>Copy <code>models</code> and <code>input</code> folders from <code>ComfyUI_OLD</code> to the new <code>ComfyUI</code> folder</li>
+<li>This restores all your checkpoints, LoRAs, and images</li>
+</ul>
+</li>
+<li>
+<p><strong>Install INSTARAW &amp; Manager</strong>:</p>
+<ul>
+<li>Copy <code>ComfyUI_INSTARAW</code> to <code>ComfyUI\custom_nodes\</code></li>
+<li>Open PowerShell in <code>ComfyUI_windows_portable</code> and run:<pre class="language-powershell powershell" data-info="powershell" data-role="codeBlock"><code>cd ComfyUI\custom_nodes
+git clone https:<span class="token operator">/</span><span class="token operator">/</span>github<span class="token punctuation">.</span>com/ltdrdata/ComfyUI-Manager<span class="token punctuation">.</span>git
+cd <span class="token punctuation">.</span><span class="token punctuation">.</span>\<span class="token punctuation">.</span><span class="token punctuation">.</span>
+</code></pre></li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h3 id="part-4-install-dependencies">Part 4: Install Dependencies </h3>
+<ol>
+<li>
+<p><strong>Download Pip Installer</strong>:</p>
+<ul>
+<li>Visit: <a href="https://bootstrap.pypa.io/get-pip.py">https://bootstrap.pypa.io/get-pip.py</a></li>
+<li>Save <code>get-pip.py</code> to <code>ComfyUI_windows_portable\</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Install Pip</strong>:</p>
+<pre class="language-powershell powershell" data-info="powershell" data-role="codeBlock"><code><span class="token punctuation">.</span>\python_embeded\python<span class="token punctuation">.</span>exe <span class="token function">get-pip</span><span class="token punctuation">.</span>py
+</code></pre></li>
+<li>
+<p><strong>Install PyTorch with GPU Support</strong>:</p>
+<pre class="language-powershell powershell" data-info="powershell" data-role="codeBlock"><code><span class="token punctuation">.</span>\python_embeded\python<span class="token punctuation">.</span>exe <span class="token operator">-</span>m pip uninstall torch torchvision torchaudio
+<span class="token punctuation">.</span>\python_embeded\python<span class="token punctuation">.</span>exe <span class="token operator">-</span>m pip install torch torchvision torchaudio <span class="token operator">--</span>index-url https:<span class="token operator">/</span><span class="token operator">/</span>download<span class="token punctuation">.</span>pytorch<span class="token punctuation">.</span>org/whl/cu121
+</code></pre></li>
+<li>
+<p><strong>Install All Requirements</strong> (run each command):</p>
+<pre class="language-powershell powershell" data-info="powershell" data-role="codeBlock"><code><span class="token punctuation">.</span>\python_embeded\python<span class="token punctuation">.</span>exe <span class="token operator">-</span>m pip install <span class="token operator">-</span>r <span class="token punctuation">.</span>\ComfyUI\requirements<span class="token punctuation">.</span>txt
+</code></pre><pre class="language-powershell powershell" data-info="powershell" data-role="codeBlock"><code><span class="token punctuation">.</span>\python_embeded\python<span class="token punctuation">.</span>exe <span class="token operator">-</span>m pip install <span class="token operator">-</span>r <span class="token punctuation">.</span>\ComfyUI\custom_nodes\ComfyUI_INSTARAW\requirements<span class="token punctuation">.</span>txt
+</code></pre><pre class="language-powershell powershell" data-info="powershell" data-role="codeBlock"><code><span class="token punctuation">.</span>\python_embeded\python<span class="token punctuation">.</span>exe <span class="token operator">-</span>m pip install <span class="token operator">-</span>r <span class="token punctuation">.</span>\ComfyUI\custom_nodes\ComfyUI-Manager\requirements<span class="token punctuation">.</span>txt
+</code></pre></li>
+</ol>
+<hr/>
+<h3 id="part-5-final-setup">Part 5: Final Setup </h3>
+<ol>
+<li><strong>Launch ComfyUI</strong>: Run <code>run_nvidia_gpu.bat</code></li>
+<li><strong>Install Missing Nodes</strong>:
+<ul>
+<li>Open ComfyUI in browser (<code>http://127.0.0.1:8188</code>)</li>
+<li>Click <strong>"Manager"</strong> → <strong>"Install Missing Custom Nodes"</strong></li>
+<li>Install any listed nodes (e.g., <code>rgthree-comfy</code>, <code>comfyui-rmbg</code>)</li>
+</ul>
+</li>
+<li><strong>Restart</strong>: Close and run <code>run_nvidia_gpu.bat</code> again</li>
+</ol>
+<p><strong>Done!</strong> Your ComfyUI now has Python 3.11 with all dependencies. You can safely delete <code>ComfyUI_OLD</code> once confirmed working.</p>
+</details>
+<hr/>
+<h2 id="-troubleshooting">🆘 Troubleshooting </h2>
+<h3 id="common-issues--solutions">Common Issues &amp; Solutions </h3>
+<details>
+<summary><b>❌ Nodes don't appear after installation</b></summary>
+<br/>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Verify <code>ComfyUI_INSTARAW</code> is in <code>ComfyUI/custom_nodes/</code></li>
+<li>Check that <code>pip install -r requirements.txt</code> completed successfully</li>
+<li><strong>Completely restart ComfyUI</strong> (not just refresh)</li>
+<li>Check ComfyUI console for error messages</li>
+</ol>
+</details>
+<details>
+<summary><b>❌ "API Key Invalid" or "Authentication Failed"</b></summary>
+<br/>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Double-check your API key is copied correctly (no extra spaces)</li>
+<li>Verify the key is active in your provider's dashboard</li>
+<li>Check you have credits available</li>
+<li>Make sure you're using the right key for the right provider</li>
+</ol>
+</details>
+<details>
+<summary><b>❌ "Image Too Large" or "Resolution Error"</b></summary>
+<br/>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Most APIs have size limits (usually 1024x1024 max)</li>
+<li>Use the <code>INSTARAW Ensure Image Resolution</code> node before API calls</li>
+<li>Check the specific API's documentation for limits</li>
+</ol>
+</details>
+<details>
+<summary><b>❌ Workflow gets stuck at Interactive Filter</b></summary>
+<br/>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Look for the <strong>floating filter window</strong> (it may be behind other windows)</li>
+<li>Click <strong>"Continue"</strong> after making your selection</li>
+<li>Use the <strong>"Clear Node Cache"</strong> button if needed to reset</li>
+</ol>
+</details>
+<details>
+<summary><b>❌ MediaPipe installation errors or dependency failures</b></summary>
+<br/>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li><code>ERROR: Could not find a version that satisfies the requirement mediapipe</code></li>
+<li><code>ERROR: No matching distribution found for mediapipe</code></li>
+<li>Nodes fail to load with import errors</li>
+</ul>
+<p><strong>Solution</strong>:</p>
+<p>MediaPipe works best with <strong>Python 3.11</strong>. While some Python 3.12 installations work, Windows Portable users commonly encounter issues:</p>
+<ol>
+<li>Check your Python version:<pre class="language-bash bash" data-info="bash" data-role="codeBlock"><code>python <span class="token parameter variable">--version</span>
+</code></pre></li>
+<li>If you see Python 3.12+ and have installation errors, follow the <a href="#-advanced-python-311-setup-for-comfyui-portable">Python 3.11 Setup Guide</a> above</li>
+<li><strong>Windows Portable users</strong>: Python 3.11 is strongly recommended</li>
+</ol>
+<blockquote>
+<p>💡 <strong>Quick Fix</strong>: The guide above walks you through setting up Python 3.11 in about 10 minutes, preserving all your existing models and data.</p>
+</blockquote>
+</details>
+<details>
+<summary><b>❌ PhotoSwipe gallery not loading</b></summary>
+<br/>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>PhotoSwipe loads from CDN - ensure internet connectivity</li>
+<li>Check browser console (F12) for errors</li>
+<li>Try refreshing the ComfyUI page</li>
+<li>Clear browser cache if needed</li>
+</ol>
+</details>
+<details>
+<summary><b>❌ Model download issues</b></summary>
+<br/>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Run the downloader script from the correct directory</li>
+<li>Check internet connectivity</li>
+<li>Some models require Civitai API token (already included in txt file)</li>
+<li>Models resume from where they left off if interrupted</li>
+</ol>
+</details>
+<details>
+<summary><b>❌ "Rate Limit" or "Too Many Requests"</b></summary>
+<br/>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Wait 30-60 seconds before trying again</li>
+<li>APIs have rate limits to prevent abuse</li>
+<li>Consider upgrading your API plan if this happens frequently</li>
+</ol>
+</details>
+<hr/>
+<h2 id="-pro-tips-for-best-results">🌟 Pro Tips for Best Results </h2>
+<h3 id="workflow-tips">Workflow Tips </h3>
+<ul>
+<li>🎯 <strong>Start Simple</strong>: Test each workflow with default settings first</li>
+<li><strong>Monitor Console</strong>: Watch the console for progress and error messages</li>
+<li>🎨 <strong>Experiment</strong>: Try different settings to find your perfect style</li>
+<li>⚡ <strong>Use Local Models</strong>: SDXL, WAN 2.2 and zImage are FREE and produce great results!</li>
+</ul>
+<h3 id="api-tips">API Tips </h3>
+<ul>
+<li>💰 <strong>Budget Wisely</strong>: Start with small tests before bulk generation</li>
+<li>🔑 <strong>Secure Keys</strong>: Never share your API keys publicly</li>
+<li>📈 <strong>Track Usage</strong>: Monitor your API usage in provider dashboards</li>
+<li>⚡ <strong>Use 2X Mode</strong>: For Nano Banana Pro, 2X mode is more cost-effective</li>
+</ul>
+<h3 id="quality-tips">Quality Tips </h3>
+<ul>
+<li>🖼️ <strong>Input Quality Matters</strong>: Better input images = better results</li>
+<li>🎭 <strong>Face Clarity</strong>: Ensure faces are clear and well-lit for faceswaps</li>
+<li>🎨 <strong>Style Consistency</strong>: Keep similar styles for best coherence</li>
+<li>✨ <strong>Final Polish</strong>: Always run Finalpass V2.0 for professional results</li>
+</ul>
+<hr/>
+<h2 id="-additional-resources">📚 Additional Resources </h2>
+<h3 id="documentation">Documentation </h3>
+<ul>
+<li>📖 <strong>Full Node Documentation</strong>: See <code>ComfyUI_INSTARAW/README.md</code></li>
+<li>🎓 <strong>Video Tutorials</strong>: Available on YouTube and Discord VIP channels</li>
+<li>💡 <strong>Workflow Examples</strong>: Included in the Workflows folder</li>
+</ul>
+<h3 id="getting-help">Getting Help </h3>
+<p>As a VIP member, you have access to:</p>
+<ul>
+<li>💬 <strong>Private Discord Support</strong> - Direct help from the team</li>
+<li>📧 <strong>Priority Email Support</strong> - For technical issues</li>
+<li>🎥 <strong>Exclusive Video Guides</strong> - Step-by-step tutorials</li>
+<li>🔄 <strong>Early Access Updates</strong> - Be the first to try new features</li>
+</ul>
+<hr/>
+<h2 id="-license--important-terms">📜 License &amp; Important Terms </h2>
+<h3 id="personal-use-license">Personal Use License </h3>
+<p>✅ <strong>You Can</strong>:</p>
+<ul>
+<li>Use INSTARAW for your personal AI content creation</li>
+<li>Create content for your own projects and portfolios</li>
+<li>Use workflows for client work (your own business)</li>
+</ul>
+<p>❌ <strong>You Cannot</strong>:</p>
+<ul>
+<li>Share or redistribute this software</li>
+<li>Use it in a commercial service (e.g., SaaS platform)</li>
+<li>Modify or reverse engineering the code</li>
+<li>Share your copy with others (even friends/team members)</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>Important</strong>: Each VIP license is for single-user use only. Multiple users need separate licenses.</p>
+</blockquote>
+<h3 id="full-license">Full License </h3>
+<p>See <code>LICENSE.txt</code> in this package for complete terms and conditions.</p>
+<hr/>
+<h2 id="-youre-all-set">🎉 You're All Set! </h2>
+<p>You're now ready to create amazing AI influencer content with INSTARAW V2.0!</p>
+<h3 id="whats-next">What's Next? </h3>
+<ol>
+<li>✅ Run the model downloader script</li>
+<li>✅ Load your first V2.0 workflow</li>
+<li>✅ Add your API keys</li>
+<li>✅ Queue your first prompt</li>
+<li>✅ Join us in Discord to share your results!</li>
+</ol>
+<hr/>
+<h2 id="-version-history-1">📊 Version History </h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Release Date</th>
+<th>Highlights</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>V2.0.0</strong></td>
+<td>December 2025</td>
+<td>14 workflows, AIL/RPG/BIG nodes, WAN 2.2 multi-sampler, zImage local, Detection bypass, ~8K prompts</td>
+</tr>
+<tr>
+<td><strong>V1.0.2</strong></td>
+<td>October 2025</td>
+<td>Fixed Booba &amp; Glutes workflow errors, Updated to V8</td>
+</tr>
+<tr>
+<td><strong>V1.0.1</strong></td>
+<td>October 2025</td>
+<td>Fixed Gemini node dependencies, Updated workflows to V12, Added legal protections</td>
+</tr>
+<tr>
+<td><strong>V1.0</strong></td>
+<td>October 2025</td>
+<td>Initial VIP release with full functionality, 4 production workflows</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<div align="center">
+<br/>
+<p><strong>Made with ❤️ by Instara</strong></p>
+<p><em>Your Digital Empire, Automated.</em></p>
+<br/>
+<hr/>
+<h3 id="need-help">Need Help? </h3>
+<p><strong>Discord</strong>: Join the <a href="https://discord.com/channels/1402334538092380350/1426528469700972564">VIP general chat</a> | <strong>Email</strong>: <a href="mailto:support@instara.io">support@instara.io</a></p>
+<p><strong>Questions?</strong> Reach out in <a href="https://discord.gg/instara">Discord</a> | <strong>Feedback?</strong> We'd love to hear it!</p>
+<br/>
+<p><strong>Happy Creating! 🚀</strong></p>
+</div>
+</div>
+</body></html>
